@@ -2883,3 +2883,105 @@ footer small {
     }
 
 }
+/* =========================================
+   MEGALODON PROFILE
+========================================= */
+
+.megalodon-hero {
+    background:
+        radial-gradient(
+            circle at 58% 30%,
+            rgba(37, 96, 106, .18),
+            transparent 32%
+        ),
+        linear-gradient(
+            110deg,
+            #18130f 0%,
+            #0b1518 52%,
+            #071013 100%
+        );
+}
+
+
+.megalodon-stage::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(42, 121, 135, .08),
+            transparent 45%
+        );
+}
+
+
+.ocean-light {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(91, 162, 166, .14),
+            rgba(47, 112, 121, .04),
+            transparent
+        );
+}
+
+
+.ocean-platform {
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(57, 111, 116, .25),
+            rgba(7, 13, 14, .92) 65%
+        );
+
+    box-shadow:
+        0 30px 60px
+        rgba(0,0,0,.65);
+}
+
+
+.megalodon-environment {
+    background:
+        radial-gradient(
+            circle at 50% 15%,
+            rgba(58, 127, 138, .20),
+            transparent 40%
+        ),
+        linear-gradient(
+            180deg,
+            #173039,
+            #091317 65%,
+            #05090b
+        );
+}
+
+
+.megalodon-map {
+    background:
+        radial-gradient(
+            circle,
+            rgba(49, 122, 132, .16),
+            transparent 60%
+        ),
+        #071013;
+}
+
+
+.megalodon-extinction {
+    background:
+        radial-gradient(
+            circle at 70% 20%,
+            rgba(45, 112, 122, .10),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #121b1d,
+            #090807
+        );
+}
