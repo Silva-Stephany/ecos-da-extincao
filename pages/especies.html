@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Espécies | Ecos da Extinção
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div>
+
+                <a
+                    href="../index.html"
+                    class="logo"
+                >
+                    <span>
+                        ECOS DA
+                    </span>
+
+                    <strong>
+                        EXTINÇÃO
+                    </strong>
+                </a>
+
+
+                <nav class="sidebar-nav">
+
+                    <a href="../index.html">
+                        <span>⌂</span>
+                        Início
+                    </a>
+
+                    <a
+                        href="especies.html"
+                        class="active"
+                    >
+                        <span>◉</span>
+                        Espécies
+                    </a>
+
+                    <a href="#">
+                        <span>◇</span>
+                        Mapa
+                    </a>
+
+                    <a href="#">
+                        <span>◫</span>
+                        Linha do tempo
+                    </a>
+
+                    <a href="#">
+                        <span>♜</span>
+                        Habitats
+                    </a>
+
+                    <a href="#">
+                        <span>↔</span>
+                        Comparador
+                    </a>
+
+                    <a href="#">
+                        <span>ⓘ</span>
+                        Sobre
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ATLAS INTERATIVO
+                </small>
+
+                <p>
+                    Fauna perdida • História natural
+                </p>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- MAIN -->
+
+        <main class="main-content">
+
+
+            <!-- HERO -->
+
+            <section class="catalog-hero">
+
+                <p class="eyebrow">
+                    CATÁLOGO
+                </p>
+
+                <h1>
+                    Espécies que desapareceram,
+                    histórias que permaneceram.
+                </h1>
+
+                <p>
+                    Explore animais extintos de diferentes
+                    épocas, continentes e ambientes.
+                </p>
+
+            </section>
+
+
+
+            <!-- FILTERS -->
+
+            <section class="catalog-filters">
+
+                <div class="filter-group">
+
+                    <label for="searchSpecies">
+                        Buscar espécie
+                    </label>
+
+                    <input
+                        type="text"
+                        id="searchSpecies"
+                        placeholder="Ex.: mamute, megalodonte..."
+                    >
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="filterType">
+                        Ambiente
+                    </label>
+
+                    <select id="filterType">
+
+                        <option value="">
+                            Todos
+                        </option>
+
+                        <option value="Terrestre">
+                            Terrestre
+                        </option>
+
+                        <option value="Marinho">
+                            Marinho
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="filterDiet">
+                        Dieta
+                    </label>
+
+                    <select id="filterDiet">
+
+                        <option value="">
+                            Todas
+                        </option>
+
+                        <option value="Herbívoro">
+                            Herbívoro
+                        </option>
+
+                        <option value="Carnívoro">
+                            Carnívoro
+                        </option>
+
+                        <option value="Onívoro">
+                            Onívoro
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- RESULT COUNT -->
+
+            <div class="catalog-summary">
+
+                <span id="speciesCount">
+                    7 espécies
+                </span>
+
+            </div>
+
+
+
+            <!-- SPECIES -->
+
+            <section
+                class="catalog-grid"
+                id="speciesGrid"
+            >
+
+
+                <article
+                    class="catalog-card"
+                    data-name="Mamute-lanoso"
+                    data-type="Terrestre"
+                    data-diet="Herbívoro"
+                >
+
+                    <div class="catalog-image">
+                        🦣
+                    </div>
+
+                    <p class="catalog-period">
+                        PLEISTOCENO
+                    </p>
+
+                    <h2>
+                        Mamute-lanoso
+                    </h2>
+
+                    <p class="catalog-scientific">
+                        Mammuthus primigenius
+                    </p>
+
+                    <div class="catalog-tags">
+
+                        <span>
+                            Terrestre
+                        </span>
+
+                        <span>
+                            Herbívoro
+                        </span>
+
+                    </div>
+
+                    <p class="catalog-description">
+                        Um dos grandes símbolos da Era do Gelo,
+                        adaptado às extensas regiões frias
+                        do hemisfério norte.
+                    </p>
+
+                    <a href="#">
+                        Explorar espécie →
+                    </a>
+
+                </article>
+
+
+
+                <article
+                    class="catalog-card"
+                    data-name="Tigre-dente-de-sabre Smilodon"
+                    data-type="Terrestre"
+                    data-diet="Carnívoro"
+                >
+
+                    <div class="catalog-image">
+                        🐅
+                    </div>
+
+                    <p class="catalog-period">
+                        PLEISTOCENO
+                    </p>
+
+                    <h2>
+                        Tigre-dente-de-sabre
+                    </h2>
+
+                    <p class="catalog-scientific">
+                        Smilodon fatalis
+                    </p>
+
+                    <div class="catalog-tags">
+
+                        <span>
+                            Terrestre
+                        </span>
+
+                        <span>
+                            Carnívoro
+                        </span>
+
+                    </div>
+
+                    <p class="catalog-description">
+                        Um poderoso predador conhecido
+                        por seus enormes dentes caninos
+                        e corpo extremamente robusto.
+                    </p>
+
+                    <a href="#">
+                        Explorar espécie →
+                    </a>
+
+                </article>
+
+
+
+                <article
+                    class="catalog-card"
+                    data-name="Preguiça-gigante Megatherium"
+                    data-type="Terrestre"
+                    data-diet="Herbívoro"
+                >
+
+                    <div class="catalog-image">
+                        ◉
+                    </div>
+
+                    <p class="catalog-period">
+                        PLEISTOCENO
+                    </p>
+
+                    <h2>
+                        Preguiça-gigante
+                    </h2>
+
+                    <p class="catalog-scientific">
+                        Megatherium
+                    </p>
+
+                    <div class="catalog-tags">
+
+                        <span>
+                            Terrestre
+                        </span>
+
+                        <span>
+                            Herbívoro
+                        </span>
+
+                    </div>
+
+                    <p class="catalog-description">
+                        Uma enorme preguiça terrestre
+                        que habitou a América do Sul
+                        durante o Pleistoceno.
+                    </p>
+
+                    <a href="#">
+                        Explorar espécie →
+                    </a>
+
+                </article>
+
+
+
+                <article
+                    class="catalog-card"
+                    data-name="Megalodonte Otodus megalodon"
+                    data-type="Marinho"
+                    data-diet="Carnívoro"
+                >
+
+                    <div class="catalog-image">
+                        🦈
+                    </div>
+
+                    <p class="catalog-period">
+                        MIOCENO — PLIOCENO
+                    </p>
+
+                    <h2>
+                        Megalodonte
+                    </h2>
+
+                    <p class="catalog-scientific">
+                        Otodus megalodon
+                    </p>
+
+                    <div class="catalog-tags">
+
+                        <span>
+                            Marinho
+                        </span>
+
+                        <span>
+                            Carnívoro
+                        </span>
+
+                    </div>
+
+                    <p class="catalog-description">
+                        Um dos maiores predadores marinhos
+                        conhecidos, dominante nos antigos
+                        oceanos por milhões de anos.
+                    </p>
+
+                    <a href="#">
+                        Explorar espécie →
+                    </a>
+
+                </article>
+
+
+
+                <article
+                    class="catalog-card"
+                    data-name="Dodô Raphus cucullatus"
+                    data-type="Terrestre"
+                    data-diet="Onívoro"
+                >
+
+                    <div class="catalog-image">
+                        🦤
+                    </div>
+
+                    <p class="catalog-period">
+                        HOLOCENO
+                    </p>
+
+                    <h2>
+                        Dodô
+                    </h2>
+
+                    <p class="catalog-scientific">
+                        Raphus cucullatus
+                    </p>
+
+                    <div class="catalog-tags">
+
+                        <span>
+                            Terrestre
+                        </span>
+
+                        <span>
+                            Onívoro
+                        </span>
+
+                    </div>
+
+                    <p class="catalog-description">
+                        Uma ave não voadora que se tornou
+                        um dos símbolos mais conhecidos
+                        da extinção causada por humanos.
+                    </p>
+
+                    <a href="#">
+                        Explorar espécie →
+                    </a>
+
+                </article>
+
+
+
+                <article
+                    class="catalog-card"
+                    data-name="Tilacino Thylacinus cynocephalus"
+                    data-type="Terrestre"
+                    data-diet="Carnívoro"
+                >
+
+                    <div class="catalog-image">
+                        ◈
+                    </div>
+
+                    <p class="catalog-period">
+                        HOLOCENO
+                    </p>
+
+                    <h2>
+                        Tilacino
+                    </h2>
+
+                    <p class="catalog-scientific">
+                        Thylacinus cynocephalus
+                    </p>
+
+                    <div class="catalog-tags">
+
+                        <span>
+                            Terrestre
+                        </span>
+
+                        <span>
+                            Carnívoro
+                        </span>
+
+                    </div>
+
+                    <p class="catalog-description">
+                        Um marsupial predador da Tasmânia,
+                        oficialmente extinto no século XX.
+                    </p>
+
+                    <a href="#">
+                        Explorar espécie →
+                    </a>
+
+                </article>
+
+
+
+                <article
+                    class="catalog-card"
+                    data-name="Gliptodonte Glyptodon"
+                    data-type="Terrestre"
+                    data-diet="Herbívoro"
+                >
+
+                    <div class="catalog-image">
+                        ◒
+                    </div>
+
+                    <p class="catalog-period">
+                        PLEISTOCENO
+                    </p>
+
+                    <h2>
+                        Gliptodonte
+                    </h2>
+
+                    <p class="catalog-scientific">
+                        Glyptodon
+                    </p>
+
+                    <div class="catalog-tags">
+
+                        <span>
+                            Terrestre
+                        </span>
+
+                        <span>
+                            Herbívoro
+                        </span>
+
+                    </div>
+
+                    <p class="catalog-description">
+                        Um enorme parente dos tatus
+                        protegido por uma carapaça
+                        rígida e resistente.
+                    </p>
+
+                    <a href="#">
+                        Explorar espécie →
+                    </a>
+
+                </article>
+
+
+            </section>
+
+
+
+            <footer>
+
+                <p>
+                    ECOS DA EXTINÇÃO
+                </p>
+
+                <small>
+                    Atlas interativo da fauna perdida
+                    • Desenvolvido por
+                    <strong>
+                        Stephany Gonçalves da Silva
+                    </strong>
+                </small>
+
+            </footer>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="../js/especies.js"></script>
+
+</body>
+
+</html>
