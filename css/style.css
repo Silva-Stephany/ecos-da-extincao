@@ -1361,3 +1361,389 @@ footer small {
     }
 
 }
+/* =========================================
+   SPECIES CATALOG
+========================================= */
+
+.catalog-hero {
+    padding:
+        60px 45px;
+
+    margin-bottom:
+        18px;
+
+    border-radius:
+        22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(42, 29, 19, .86),
+            rgba(15, 10, 7, .94)
+        );
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.catalog-hero h1 {
+    max-width:
+        850px;
+
+    margin:
+        0;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        clamp(
+            2.8rem,
+            6vw,
+            5.4rem
+        );
+
+    line-height:
+        .95;
+}
+
+
+.catalog-hero > p:last-child {
+    max-width:
+        650px;
+
+    margin-top:
+        22px;
+
+    color:
+        var(--muted);
+
+    line-height:
+        1.7;
+}
+
+
+/* FILTERS */
+
+.catalog-filters {
+    display:
+        grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap:
+        12px;
+
+    padding:
+        20px;
+
+    border-radius:
+        16px;
+
+    background:
+        rgba(19, 13, 9, .90);
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.filter-group {
+    display:
+        grid;
+
+    gap:
+        7px;
+}
+
+
+.filter-group label {
+    color:
+        var(--gold);
+
+    font-size:
+        .58rem;
+
+    letter-spacing:
+        1.2px;
+}
+
+
+.filter-group input,
+.filter-group select {
+    width:
+        100%;
+
+    padding:
+        12px 13px;
+
+    border-radius:
+        9px;
+
+    border:
+        1px solid
+        rgba(203,166,98,.16);
+
+    outline:
+        none;
+
+    background:
+        #0d0907;
+
+    color:
+        var(--bone);
+
+    font-family:
+        var(--body);
+}
+
+
+.filter-group input:focus,
+.filter-group select:focus {
+    border-color:
+        rgba(203,166,98,.55);
+}
+
+
+/* SUMMARY */
+
+.catalog-summary {
+    padding:
+        18px 4px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .70rem;
+}
+
+
+/* CARDS */
+
+.catalog-grid {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        16px;
+}
+
+
+.catalog-card {
+    padding:
+        15px;
+
+    border-radius:
+        18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(28, 20, 14, .90),
+            rgba(13, 9, 7, .94)
+        );
+
+    border:
+        1px solid
+        rgba(203,166,98,.12);
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease;
+}
+
+
+.catalog-card:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(203,166,98,.45);
+}
+
+
+.catalog-image {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    height:
+        260px;
+
+    border-radius:
+        12px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(202,158,88,.18),
+            transparent 50%
+        ),
+        linear-gradient(
+            145deg,
+            #342419,
+            #140e09
+        );
+
+    font-size:
+        8rem;
+}
+
+
+.catalog-period {
+    margin:
+        20px 0 7px;
+
+    color:
+        var(--gold);
+
+    font-size:
+        .58rem;
+
+    letter-spacing:
+        1.5px;
+}
+
+
+.catalog-card h2 {
+    margin:
+        0;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--bone);
+
+    font-size:
+        1.9rem;
+}
+
+
+.catalog-scientific {
+    margin:
+        5px 0 16px;
+
+    color:
+        #9d8970;
+
+    font-family:
+        var(--title);
+
+    font-style:
+        italic;
+}
+
+
+.catalog-tags {
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        7px;
+}
+
+
+.catalog-tags span {
+    padding:
+        6px 9px;
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(203,166,98,.07);
+
+    border:
+        1px solid
+        rgba(203,166,98,.11);
+
+    color:
+        #c2aa87;
+
+    font-size:
+        .58rem;
+}
+
+
+.catalog-description {
+    min-height:
+        78px;
+
+    margin:
+        18px 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .74rem;
+
+    line-height:
+        1.7;
+}
+
+
+.catalog-card > a {
+    color:
+        var(--gold);
+
+    font-size:
+        .70rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+
+    .catalog-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .catalog-filters {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .catalog-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .catalog-hero {
+        padding:
+            40px 25px;
+    }
+
+}
