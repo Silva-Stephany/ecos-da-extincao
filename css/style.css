@@ -3332,3 +3332,250 @@ footer small {
     }
 
 }
+/* =========================================
+   DODO PROFILE
+========================================= */
+
+.dodo-hero {
+    background:
+        radial-gradient(
+            circle at 58% 27%,
+            rgba(145, 119, 74, .16),
+            transparent 35%
+        ),
+        linear-gradient(
+            110deg,
+            #21190f 0%,
+            #17130d 52%,
+            #0c0906 100%
+        );
+}
+
+
+.dodo-light {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(213, 187, 128, .16),
+            rgba(138, 113, 68, .04),
+            transparent
+        );
+}
+
+
+.dodo-platform {
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(154, 125, 75, .22),
+            rgba(18, 13, 9, .95) 65%
+        );
+}
+
+
+.dodo-environment {
+    background:
+        radial-gradient(
+            circle at 55% 15%,
+            rgba(122, 130, 69, .19),
+            transparent 42%
+        ),
+        linear-gradient(
+            180deg,
+            #34341e,
+            #1a190f 62%,
+            #0d0b07
+        );
+}
+
+
+.dodo-map {
+    background:
+        radial-gradient(
+            circle at 75% 60%,
+            rgba(186, 148, 82, .17),
+            transparent 16%
+        ),
+        #0c0906;
+}
+
+
+.dodo-map-focus {
+    border-color:
+        rgba(203,166,98,.65) !important;
+
+    background:
+        rgba(203,166,98,.13) !important;
+}
+
+
+.dodo-extinction {
+    background:
+        radial-gradient(
+            circle at 75% 20%,
+            rgba(132, 90, 48, .12),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #21160e,
+            #0c0906
+        );
+}
+
+
+/* HUMAN ARRIVAL */
+
+.human-arrival-section {
+    margin-top: 14px;
+
+    padding: 55px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(28, 18, 11, .97),
+            rgba(12, 9, 6, .97)
+        );
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.arrival-timeline {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 35px;
+}
+
+
+.arrival-timeline article {
+    position: relative;
+
+    min-height: 250px;
+
+    padding: 24px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(0, 0, 0, .18);
+
+    border:
+        1px solid
+        rgba(203,166,98,.10);
+}
+
+
+.arrival-timeline article::after {
+    content: "→";
+
+    position: absolute;
+
+    right: -13px;
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    color:
+        rgba(203,166,98,.35);
+
+    font-size: 1.2rem;
+
+    z-index: 2;
+}
+
+
+.arrival-timeline article:last-child::after {
+    display: none;
+}
+
+
+.arrival-timeline article > span {
+    display: block;
+
+    margin-bottom: 22px;
+
+    font-family:
+        var(--title);
+
+    color:
+        rgba(203,166,98,.35);
+
+    font-size: 2.7rem;
+}
+
+
+.arrival-timeline small {
+    color:
+        var(--gold);
+
+    font-size: .5rem;
+
+    letter-spacing: 1.3px;
+}
+
+
+.arrival-timeline h3 {
+    margin:
+        10px 0 12px;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--bone);
+
+    font-size: 1.45rem;
+}
+
+
+.arrival-timeline p {
+    color:
+        var(--muted);
+
+    font-size: .68rem;
+
+    line-height: 1.7;
+}
+
+
+@media (max-width: 900px) {
+
+    .arrival-timeline {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .arrival-timeline article::after {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .human-arrival-section {
+        padding:
+            35px 25px;
+    }
+
+
+    .arrival-timeline {
+        grid-template-columns:
+            1fr;
+    }
+
+}
