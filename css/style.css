@@ -2985,3 +2985,101 @@ footer small {
             #090807
         );
 }
+/* =========================================
+   SMILODON PROFILE
+========================================= */
+
+.smilodon-hero {
+    background:
+        radial-gradient(
+            circle at 58% 28%,
+            rgba(163, 106, 50, .18),
+            transparent 34%
+        ),
+        linear-gradient(
+            110deg,
+            #21160e 0%,
+            #15100b 55%,
+            #0c0906 100%
+        );
+}
+
+
+.smilodon-stage::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(157, 107, 55, .08),
+            transparent 50%
+        );
+}
+
+
+.smilodon-light {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(221, 177, 105, .16),
+            rgba(134, 85, 38, .04),
+            transparent
+        );
+}
+
+
+.smilodon-platform {
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(151, 103, 53, .22),
+            rgba(20, 14, 9, .95) 65%
+        );
+}
+
+
+.smilodon-environment {
+    background:
+        radial-gradient(
+            circle at 60% 18%,
+            rgba(189, 130, 65, .18),
+            transparent 40%
+        ),
+        linear-gradient(
+            180deg,
+            #352519,
+            #18110c 65%,
+            #0c0906
+        );
+}
+
+
+.smilodon-map {
+    background:
+        radial-gradient(
+            circle,
+            rgba(171, 113, 53, .13),
+            transparent 60%
+        ),
+        #100b07;
+}
+
+
+.smilodon-extinction {
+    background:
+        radial-gradient(
+            circle at 75% 20%,
+            rgba(150, 87, 38, .10),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #24160d,
+            #0c0906
+        );
+}
