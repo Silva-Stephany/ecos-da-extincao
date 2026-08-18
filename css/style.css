@@ -4658,3 +4658,1094 @@ footer small {
     }
 
 }
+/* =========================================
+   EXTINCTION TIMELINE
+========================================= */
+
+.timeline-hero {
+    padding:
+        70px 50px;
+
+    margin-bottom:
+        14px;
+
+    border-radius:
+        22px;
+
+    background:
+        radial-gradient(
+            circle at 75% 25%,
+            rgba(203,166,98,.11),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #24190f,
+            #0c0906
+        );
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.timeline-hero h1 {
+    max-width:
+        950px;
+
+    margin: 0;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        clamp(3.3rem, 7vw, 6.5rem);
+
+    line-height:
+        .9;
+}
+
+
+.timeline-hero > p:last-child {
+    max-width:
+        700px;
+
+    margin-top:
+        25px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .78rem;
+
+    line-height:
+        1.8;
+}
+
+
+/* STATS */
+
+.timeline-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    margin-bottom:
+        14px;
+
+    overflow:
+        hidden;
+
+    border-radius:
+        18px;
+
+    background:
+        rgba(15,10,7,.94);
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.timeline-stats article {
+    min-height:
+        180px;
+
+    padding:
+        28px;
+
+    border-right:
+        1px solid
+        rgba(203,166,98,.08);
+}
+
+
+.timeline-stats article:last-child {
+    border-right:
+        none;
+}
+
+
+.timeline-stats small {
+    color:
+        var(--gold);
+
+    font-size:
+        .5rem;
+
+    letter-spacing:
+        1.2px;
+}
+
+
+.timeline-stats strong {
+    display:
+        block;
+
+    margin:
+        12px 0 0;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        3rem;
+}
+
+
+.timeline-stats p {
+    margin:
+        0 0 15px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .6rem;
+}
+
+
+.timeline-stats span {
+    color:
+        var(--bone);
+
+    font-size:
+        .65rem;
+
+    line-height:
+        1.5;
+}
+
+
+/* INTRO */
+
+.timeline-intro {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        45px;
+
+    align-items:
+        end;
+
+    margin-bottom:
+        14px;
+
+    padding:
+        50px;
+
+    border-radius:
+        18px;
+
+    background:
+        rgba(16,11,8,.92);
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.timeline-intro h2 {
+    margin: 0;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        3rem;
+
+    line-height:
+        .95;
+}
+
+
+.timeline-intro > p {
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    line-height:
+        1.8;
+}
+
+
+/* CHAPTER */
+
+.timeline-chapter {
+    display: grid;
+
+    grid-template-columns:
+        180px 1fr;
+
+    margin-bottom:
+        14px;
+
+    overflow: hidden;
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(14,10,7,.94);
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.timeline-chapter-label {
+    display: flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        space-between;
+
+    padding:
+        35px 25px;
+
+    border-right:
+        1px solid
+        rgba(203,166,98,.10);
+}
+
+
+.timeline-chapter-label small {
+    color:
+        var(--gold);
+
+    font-size:
+        .5rem;
+}
+
+
+.timeline-chapter-label strong {
+    writing-mode:
+        vertical-rl;
+
+    transform:
+        rotate(180deg);
+
+    font-family:
+        var(--title);
+
+    color:
+        rgba(203,166,98,.25);
+
+    font-size:
+        2.4rem;
+
+    letter-spacing:
+        2px;
+}
+
+
+.timeline-chapter-content {
+    padding:
+        60px;
+}
+
+
+.timeline-chapter-content > h2 {
+    max-width:
+        800px;
+
+    margin:
+        0 0 20px;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        clamp(2.8rem,5vw,5rem);
+
+    line-height:
+        .92;
+}
+
+
+.timeline-chapter-content > p:not(.eyebrow) {
+    max-width:
+        730px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+
+    line-height:
+        1.8;
+}
+
+
+/* ANCIENT OCEANS */
+
+.ancient-oceans {
+    background:
+        radial-gradient(
+            circle at 80% 35%,
+            rgba(46,111,122,.13),
+            transparent 34%
+        ),
+        linear-gradient(
+            145deg,
+            #101b1e,
+            #0a0907
+        );
+}
+
+
+.time-species-card {
+    display: grid;
+
+    grid-template-columns:
+        100px 1fr;
+
+    gap:
+        25px;
+
+    max-width:
+        700px;
+
+    margin-top:
+        40px;
+
+    padding:
+        28px;
+
+    border-radius:
+        15px;
+
+    background:
+        rgba(0,0,0,.20);
+
+    border:
+        1px solid
+        rgba(203,166,98,.10);
+}
+
+
+.time-symbol {
+    display: flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-family:
+        var(--title);
+
+    color:
+        rgba(203,166,98,.35);
+
+    font-size:
+        4rem;
+}
+
+
+.time-species-card small,
+.pleistocene-grid small,
+.historic-extinction-grid small {
+    color:
+        var(--gold);
+
+    font-size:
+        .5rem;
+
+    letter-spacing:
+        1px;
+}
+
+
+.time-species-card h3,
+.pleistocene-grid h3,
+.historic-extinction-grid h3 {
+    margin:
+        7px 0 2px;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--bone);
+
+    font-size:
+        1.7rem;
+}
+
+
+.time-species-card em,
+.pleistocene-grid em,
+.historic-extinction-grid em {
+    color:
+        var(--muted);
+
+    font-family:
+        var(--title);
+}
+
+
+.time-species-card p,
+.pleistocene-grid p,
+.historic-extinction-grid p {
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    line-height:
+        1.7;
+}
+
+
+.time-species-card a,
+.pleistocene-grid a,
+.historic-extinction-grid a {
+    color:
+        var(--gold);
+
+    font-size:
+        .65rem;
+}
+
+
+/* TRANSITION */
+
+.time-transition {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        20px;
+
+    height:
+        70px;
+
+    padding:
+        0 30px;
+
+    color:
+        var(--dark-muted);
+
+    font-size:
+        .5rem;
+
+    letter-spacing:
+        2px;
+}
+
+
+.time-transition div {
+    flex: 1;
+
+    height:
+        1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(203,166,98,.35),
+            transparent
+        );
+}
+
+
+/* PLEISTOCENE */
+
+.ice-age {
+    background:
+        radial-gradient(
+            circle at 80% 25%,
+            rgba(145,151,126,.08),
+            transparent 35%
+        ),
+        #0d0d0a;
+}
+
+
+.pleistocene-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        40px;
+}
+
+
+.pleistocene-grid article {
+    min-height:
+        280px;
+
+    padding:
+        25px;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(255,255,255,.018);
+
+    border:
+        1px solid
+        rgba(203,166,98,.09);
+}
+
+
+.timeline-number {
+    display: block;
+
+    margin-bottom:
+        30px;
+
+    font-family:
+        var(--title);
+
+    color:
+        rgba(203,166,98,.27);
+
+    font-size:
+        2.8rem;
+}
+
+
+/* COEXISTENCE */
+
+.coexistence-section {
+    margin-bottom:
+        14px;
+
+    padding:
+        55px;
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(15,10,7,.94);
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.coexistence-chart {
+    position: relative;
+
+    max-width:
+        900px;
+
+    margin-top:
+        40px;
+
+    padding:
+        30px 0;
+}
+
+
+.coexistence-row {
+    display: grid;
+
+    grid-template-columns:
+        180px 1fr;
+
+    align-items: center;
+
+    gap:
+        20px;
+
+    margin-bottom:
+        18px;
+}
+
+
+.coexistence-row > div {
+    color:
+        var(--bone);
+
+    font-size:
+        .67rem;
+}
+
+
+.life-bar {
+    display: block;
+
+    height:
+        12px;
+
+    border-radius:
+        20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(203,166,98,.32),
+            var(--gold)
+        );
+
+    box-shadow:
+        0 0 15px
+        rgba(203,166,98,.15);
+}
+
+
+.long-bar {
+    width:
+        92%;
+}
+
+
+.medium-bar {
+    width:
+        72%;
+}
+
+
+.human-marker {
+    display: flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    margin-top:
+        30px;
+
+    color:
+        var(--gold);
+
+    font-size:
+        .52rem;
+
+    letter-spacing:
+        1px;
+}
+
+
+.human-marker span {
+    width:
+        12px;
+
+    height:
+        12px;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--gold);
+}
+
+
+.timeline-disclaimer {
+    color:
+        var(--dark-muted);
+
+    font-size:
+        .58rem;
+
+    line-height:
+        1.6;
+}
+
+
+/* HIGHLIGHT */
+
+.timeline-highlight {
+    display: grid;
+
+    grid-template-columns:
+        .7fr 1.3fr;
+
+    gap:
+        50px;
+
+    align-items:
+        center;
+
+    margin-bottom:
+        14px;
+
+    padding:
+        55px;
+
+    border-radius:
+        20px;
+
+    background:
+        radial-gradient(
+            circle at 25% 50%,
+            rgba(203,166,98,.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #1b160e,
+            #0b0906
+        );
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.timeline-highlight-number {
+    text-align:
+        center;
+}
+
+
+.timeline-highlight-number small {
+    color:
+        var(--gold);
+
+    font-size:
+        .5rem;
+
+    letter-spacing:
+        1.4px;
+}
+
+
+.timeline-highlight-number strong {
+    display: block;
+
+    margin:
+        5px 0;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        clamp(4rem,9vw,8rem);
+
+    line-height:
+        1;
+}
+
+
+.timeline-highlight-number span {
+    color:
+        var(--muted);
+
+    font-size:
+        .65rem;
+}
+
+
+.timeline-highlight h2 {
+    margin:
+        0 0 20px;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        clamp(2.5rem,5vw,4rem);
+
+    line-height:
+        .95;
+}
+
+
+.timeline-highlight p {
+    color:
+        var(--muted);
+
+    font-size:
+        .72rem;
+
+    line-height:
+        1.8;
+}
+
+
+.timeline-highlight a {
+    display:
+        inline-block;
+
+    margin-top:
+        10px;
+
+    color:
+        var(--gold);
+
+    font-size:
+        .65rem;
+}
+
+
+/* HISTORICAL */
+
+.historic-era {
+    background:
+        linear-gradient(
+            145deg,
+            #21170f,
+            #0c0906
+        );
+}
+
+
+.historic-extinction-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        14px;
+
+    margin-top:
+        40px;
+}
+
+
+.historic-extinction-grid article {
+    padding:
+        30px;
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(0,0,0,.20);
+
+    border:
+        1px solid
+        rgba(203,166,98,.10);
+}
+
+
+.historic-year {
+    margin-bottom:
+        30px;
+
+    font-family:
+        var(--title);
+
+    color:
+        rgba(203,166,98,.35);
+
+    font-size:
+        4.5rem;
+}
+
+
+/* SUMMARY */
+
+.timeline-summary {
+    margin-bottom:
+        14px;
+
+    padding:
+        55px;
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(15,10,7,.94);
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.summary-time-list {
+    margin-top:
+        35px;
+
+    border-top:
+        1px solid
+        rgba(203,166,98,.10);
+}
+
+
+.summary-time-list article {
+    display: grid;
+
+    grid-template-columns:
+        60px 1fr;
+
+    align-items: center;
+
+    padding:
+        18px 0;
+
+    border-bottom:
+        1px solid
+        rgba(203,166,98,.08);
+}
+
+
+.summary-time-list article > span {
+    color:
+        rgba(203,166,98,.35);
+
+    font-family:
+        var(--title);
+
+    font-size:
+        1.5rem;
+}
+
+
+.summary-time-list small {
+    display: block;
+
+    color:
+        var(--gold);
+
+    font-size:
+        .5rem;
+
+    letter-spacing:
+        1px;
+}
+
+
+.summary-time-list strong {
+    color:
+        var(--bone);
+
+    font-family:
+        var(--title);
+
+    font-size:
+        1.25rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .timeline-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .timeline-intro,
+    .timeline-highlight {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .timeline-chapter {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .timeline-chapter-label {
+        flex-direction:
+            row;
+    }
+
+
+    .timeline-chapter-label strong {
+        writing-mode:
+            horizontal-tb;
+
+        transform:
+            none;
+
+        font-size:
+            1.4rem;
+    }
+
+
+    .pleistocene-grid,
+    .historic-extinction-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .timeline-hero,
+    .timeline-intro,
+    .timeline-chapter-content,
+    .coexistence-section,
+    .timeline-highlight,
+    .timeline-summary {
+        padding:
+            35px 25px;
+    }
+
+
+    .timeline-stats {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .timeline-stats article {
+        border-right:
+            none;
+
+        border-bottom:
+            1px solid
+            rgba(203,166,98,.08);
+    }
+
+
+    .coexistence-row {
+        grid-template-columns:
+            120px 1fr;
+    }
+
+}
