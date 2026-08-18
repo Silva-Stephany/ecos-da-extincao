@@ -3083,3 +3083,252 @@ footer small {
             #0c0906
         );
 }
+/* =========================================
+   GIANT GROUND SLOTH PROFILE
+========================================= */
+
+.sloth-hero {
+    background:
+        radial-gradient(
+            circle at 58% 25%,
+            rgba(113, 118, 63, .17),
+            transparent 34%
+        ),
+        linear-gradient(
+            110deg,
+            #211b10 0%,
+            #17170d 52%,
+            #0c0b07 100%
+        );
+}
+
+
+.sloth-light {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(194, 180, 107, .15),
+            rgba(103, 106, 56, .04),
+            transparent
+        );
+}
+
+
+.sloth-platform {
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(113, 108, 57, .23),
+            rgba(19, 17, 10, .95) 65%
+        );
+}
+
+
+.temporary-animal-symbol {
+    color:
+        rgba(212, 189, 132, .75);
+
+    text-shadow:
+        0 20px 60px
+        rgba(0,0,0,.7);
+}
+
+
+/* SCALE */
+
+.scale-section {
+    margin-top: 14px;
+
+    padding: 55px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(16, 12, 8, .92);
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.scale-comparison {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    gap: 80px;
+
+    min-height: 390px;
+
+    margin-top: 35px;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    background:
+        radial-gradient(
+            circle at center bottom,
+            rgba(203,166,98,.08),
+            transparent 55%
+        ),
+        #0c0906;
+}
+
+
+.scale-item {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    text-align: center;
+}
+
+
+.scale-shape {
+    color:
+        var(--gold-light);
+
+    font-family:
+        var(--title);
+
+    line-height: 1;
+}
+
+
+.giant-sloth .scale-shape {
+    font-size: 13rem;
+}
+
+
+.human-scale .scale-shape {
+    font-size: 6rem;
+}
+
+
+.modern-sloth .scale-shape {
+    font-size: 2.5rem;
+}
+
+
+.scale-item strong {
+    margin-top: 20px;
+
+    color:
+        var(--bone);
+
+    font-family:
+        var(--title);
+
+    font-size: 1.25rem;
+}
+
+
+.scale-item small {
+    margin-top: 5px;
+
+    color:
+        var(--muted);
+
+    font-size: .58rem;
+}
+
+
+.sloth-environment {
+    background:
+        radial-gradient(
+            circle at 55% 20%,
+            rgba(129, 119, 61, .18),
+            transparent 40%
+        ),
+        linear-gradient(
+            180deg,
+            #30301a,
+            #17170d 65%,
+            #0b0a06
+        );
+}
+
+
+.sloth-map {
+    background:
+        radial-gradient(
+            circle,
+            rgba(121, 118, 64, .14),
+            transparent 60%
+        ),
+        #0d0d07;
+}
+
+
+.sloth-extinction {
+    background:
+        radial-gradient(
+            circle at 75% 20%,
+            rgba(116, 103, 53, .10),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #201c0f,
+            #0c0906
+        );
+}
+
+
+.sloth-old {
+    font-size: 9rem;
+    color: var(--gold-light);
+}
+
+
+.sloth-modern {
+    font-size: 3rem;
+    color: var(--gold-light);
+}
+
+
+@media (max-width: 800px) {
+
+    .scale-section {
+        padding:
+            35px 25px;
+    }
+
+
+    .scale-comparison {
+        gap: 25px;
+
+        padding:
+            30px 10px;
+
+        min-height:
+            300px;
+    }
+
+
+    .giant-sloth .scale-shape {
+        font-size:
+            8rem;
+    }
+
+
+    .human-scale .scale-shape {
+        font-size:
+            4rem;
+    }
+
+
+    .modern-sloth .scale-shape {
+        font-size:
+            2rem;
+    }
+
+}
