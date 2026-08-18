@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Comparador | Ecos da Extinção
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div>
+
+                <a
+                    href="../index.html"
+                    class="logo"
+                >
+                    <span>ECOS DA</span>
+                    <strong>EXTINÇÃO</strong>
+                </a>
+
+                <nav class="sidebar-nav">
+
+                    <a href="../index.html">
+                        <span>⌂</span>
+                        Início
+                    </a>
+
+                    <a href="especies.html">
+                        <span>◉</span>
+                        Espécies
+                    </a>
+
+                    <a href="mapa.html">
+                        <span>◇</span>
+                        Mapa
+                    </a>
+
+                    <a href="linha-do-tempo.html">
+                        <span>◫</span>
+                        Linha do tempo
+                    </a>
+
+                    <a href="habitats.html">
+                        <span>♜</span>
+                        Habitats
+                    </a>
+
+                    <a
+                        href="comparador.html"
+                        class="active"
+                    >
+                        <span>↔</span>
+                        Comparador
+                    </a>
+
+                    <a href="#">
+                        <span>ⓘ</span>
+                        Sobre
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ATLAS INTERATIVO
+                </small>
+
+                <p>
+                    Fauna perdida • História natural
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+
+        <main class="main-content">
+
+
+            <!-- HERO -->
+
+            <section class="compare-hero">
+
+                <p class="eyebrow">
+                    LADO A LADO
+                </p>
+
+                <h1>
+                    Compare criaturas
+                    de mundos diferentes.
+                </h1>
+
+                <p>
+                    Escolha duas espécies e descubra
+                    como porte, dieta, período, ambiente
+                    e distribuição se relacionam.
+                </p>
+
+            </section>
+
+
+            <!-- SELECTORS -->
+
+            <section class="compare-controls">
+
+                <div class="compare-select-group">
+
+                    <label for="speciesA">
+                        ESPÉCIE A
+                    </label>
+
+                    <select id="speciesA">
+
+                        <option value="mamute">
+                            Mamute-lanoso
+                        </option>
+
+                        <option value="smilodon">
+                            Tigre-dente-de-sabre
+                        </option>
+
+                        <option value="preguica">
+                            Preguiça-gigante
+                        </option>
+
+                        <option value="megalodonte">
+                            Megalodonte
+                        </option>
+
+                        <option value="dodo">
+                            Dodô
+                        </option>
+
+                        <option value="tilacino">
+                            Tilacino
+                        </option>
+
+                        <option value="gliptodonte">
+                            Gliptodonte
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="compare-versus">
+                    VS
+                </div>
+
+
+                <div class="compare-select-group">
+
+                    <label for="speciesB">
+                        ESPÉCIE B
+                    </label>
+
+                    <select id="speciesB">
+
+                        <option value="megalodonte">
+                            Megalodonte
+                        </option>
+
+                        <option value="mamute">
+                            Mamute-lanoso
+                        </option>
+
+                        <option value="smilodon">
+                            Tigre-dente-de-sabre
+                        </option>
+
+                        <option value="preguica">
+                            Preguiça-gigante
+                        </option>
+
+                        <option value="dodo">
+                            Dodô
+                        </option>
+
+                        <option value="tilacino">
+                            Tilacino
+                        </option>
+
+                        <option value="gliptodonte">
+                            Gliptodonte
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- MAIN COMPARISON -->
+
+            <section class="compare-stage">
+
+                <article
+                    class="compare-animal-card"
+                    id="compareCardA"
+                >
+
+                    <small class="compare-label">
+                        ESPÉCIE A
+                    </small>
+
+                    <div
+                        class="compare-visual"
+                        id="visualA"
+                    >
+                        🦣
+                    </div>
+
+                    <h2 id="nameA">
+                        Mamute-lanoso
+                    </h2>
+
+                    <em id="scientificA">
+                        Mammuthus primigenius
+                    </em>
+
+                    <a
+                        href="mamute.html"
+                        id="profileA"
+                    >
+                        Ver perfil completo →
+                    </a>
+
+                </article>
+
+
+                <div class="compare-center">
+
+                    <span>
+                        ×
+                    </span>
+
+                </div>
+
+
+                <article
+                    class="compare-animal-card"
+                    id="compareCardB"
+                >
+
+                    <small class="compare-label">
+                        ESPÉCIE B
+                    </small>
+
+                    <div
+                        class="compare-visual"
+                        id="visualB"
+                    >
+                        🦈
+                    </div>
+
+                    <h2 id="nameB">
+                        Megalodonte
+                    </h2>
+
+                    <em id="scientificB">
+                        Otodus megalodon
+                    </em>
+
+                    <a
+                        href="mega.html"
+                        id="profileB"
+                    >
+                        Ver perfil completo →
+                    </a>
+
+                </article>
+
+            </section>
+
+
+            <!-- QUICK FACTS -->
+
+            <section class="comparison-data">
+
+                <div class="comparison-data-header">
+
+                    <span></span>
+
+                    <strong id="headerA">
+                        Mamute-lanoso
+                    </strong>
+
+                    <strong id="headerB">
+                        Megalodonte
+                    </strong>
+
+                </div>
+
+
+                <div class="comparison-data-row">
+
+                    <span>
+                        PERÍODO
+                    </span>
+
+                    <p id="periodA">
+                        Pleistoceno
+                    </p>
+
+                    <p id="periodB">
+                        Mioceno — Plioceno
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-data-row">
+
+                    <span>
+                        AMBIENTE
+                    </span>
+
+                    <p id="environmentA">
+                        Terrestre
+                    </p>
+
+                    <p id="environmentB">
+                        Marinho
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-data-row">
+
+                    <span>
+                        HABITAT
+                    </span>
+
+                    <p id="habitatA">
+                        Estepe-tundra
+                    </p>
+
+                    <p id="habitatB">
+                        Oceanos
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-data-row">
+
+                    <span>
+                        DIETA
+                    </span>
+
+                    <p id="dietA">
+                        Herbívoro
+                    </p>
+
+                    <p id="dietB">
+                        Carnívoro
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-data-row">
+
+                    <span>
+                        DISTRIBUIÇÃO
+                    </span>
+
+                    <p id="distributionA">
+                        Hemisfério Norte
+                    </p>
+
+                    <p id="distributionB">
+                        Diversos oceanos
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-data-row">
+
+                    <span>
+                        PORTE
+                    </span>
+
+                    <p id="sizeA">
+                        Várias toneladas
+                    </p>
+
+                    <p id="sizeB">
+                        Gigantesco
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-data-row">
+
+                    <span>
+                        DESTAQUE
+                    </span>
+
+                    <p id="featureA">
+                        Adaptação ao frio
+                    </p>
+
+                    <p id="featureB">
+                        Superpredador marinho
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- DIFFERENCES -->
+
+            <section class="compare-summary">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        CONTRASTES
+                    </p>
+
+                    <h2>
+                        Dois animais.
+                        Duas estratégias de sobrevivência.
+                    </h2>
+
+                </div>
+
+
+                <div class="compare-summary-grid">
+
+                    <article>
+
+                        <small>
+                            AMBIENTE
+                        </small>
+
+                        <strong id="summaryEnvironment">
+                            Terra × Oceano
+                        </strong>
+
+                    </article>
+
+
+                    <article>
+
+                        <small>
+                            ALIMENTAÇÃO
+                        </small>
+
+                        <strong id="summaryDiet">
+                            Herbívoro × Carnívoro
+                        </strong>
+
+                    </article>
+
+
+                    <article>
+
+                        <small>
+                            TEMPO
+                        </small>
+
+                        <strong id="summaryTime">
+                            Épocas muito diferentes
+                        </strong>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- NOTE -->
+
+            <section class="compare-note">
+
+                <p class="eyebrow">
+                    COMO INTERPRETAR
+                </p>
+
+                <h2>
+                    Nem toda comparação
+                    precisa indicar superioridade.
+                </h2>
+
+                <p>
+                    Tamanho, força ou velocidade
+                    só fazem sentido dentro do ambiente
+                    e do modo de vida de cada espécie.
+                    O objetivo aqui é comparar adaptações,
+                    não decidir qual animal era “melhor”.
+                </p>
+
+            </section>
+
+
+            <!-- NEXT -->
+
+            <section class="next-species">
+
+                <small>
+                    PRÓXIMA EXPERIÊNCIA
+                </small>
+
+                <h2>
+                    Sobre o projeto
+                </h2>
+
+                <p>
+                    Conheça a proposta,
+                    a metodologia e as fontes
+                    por trás do Ecos da Extinção.
+                </p>
+
+                <a href="#">
+                    Sobre →
+                </a>
+
+            </section>
+
+
+            <footer>
+
+                <p>
+                    ECOS DA EXTINÇÃO
+                </p>
+
+                <small>
+                    Atlas interativo da fauna perdida
+                    • Desenvolvido por
+                    <strong>
+                        Stephany Gonçalves da Silva
+                    </strong>
+                </small>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script src="../js/comparador.js"></script>
+
+</body>
+
+</html>
