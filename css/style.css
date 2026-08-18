@@ -3878,3 +3878,120 @@ footer small {
     }
 
 }
+/* =========================================
+   GLYPTODON PROFILE
+========================================= */
+
+.glyptodon-hero {
+    background:
+        radial-gradient(
+            circle at 58% 27%,
+            rgba(126, 102, 62, .17),
+            transparent 35%
+        ),
+        linear-gradient(
+            110deg,
+            #211a10 0%,
+            #17140d 52%,
+            #0c0906 100%
+        );
+}
+
+
+.glyptodon-light {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(208, 183, 121, .15),
+            rgba(120, 96, 56, .04),
+            transparent
+        );
+}
+
+
+.glyptodon-platform {
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(134, 107, 60, .23),
+            rgba(18, 13, 9, .95) 65%
+        );
+}
+
+
+.glyptodon-environment {
+    background:
+        radial-gradient(
+            circle at 55% 18%,
+            rgba(126, 115, 66, .18),
+            transparent 42%
+        ),
+        linear-gradient(
+            180deg,
+            #33301d,
+            #1a170e 63%,
+            #0c0a07
+        );
+}
+
+
+.glyptodon-map {
+    background:
+        radial-gradient(
+            circle,
+            rgba(154, 118, 63, .14),
+            transparent 60%
+        ),
+        #0d0a07;
+}
+
+
+.glyptodon-extinction {
+    background:
+        radial-gradient(
+            circle at 75% 20%,
+            rgba(120, 85, 45, .11),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #21170e,
+            #0c0906
+        );
+}
+
+
+.glyptodon-scale .scale-shape {
+    font-size: 11rem;
+}
+
+
+.armadillo-scale .scale-shape {
+    font-size: 2.8rem;
+}
+
+
+.glyptodon-old {
+    color: var(--gold-light);
+    font-size: 8rem;
+}
+
+
+.armadillo-modern {
+    color: var(--gold-light);
+    font-size: 3rem;
+}
+
+
+@media (max-width: 800px) {
+
+    .glyptodon-scale .scale-shape {
+        font-size: 7rem;
+    }
+
+
+    .armadillo-scale .scale-shape {
+        font-size: 2rem;
+    }
+
+}
