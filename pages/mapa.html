@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Mapa | Ecos da Extinção
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div>
+
+                <a
+                    href="../index.html"
+                    class="logo"
+                >
+                    <span>ECOS DA</span>
+                    <strong>EXTINÇÃO</strong>
+                </a>
+
+                <nav class="sidebar-nav">
+
+                    <a href="../index.html">
+                        <span>⌂</span>
+                        Início
+                    </a>
+
+                    <a href="especies.html">
+                        <span>◉</span>
+                        Espécies
+                    </a>
+
+                    <a
+                        href="mapa.html"
+                        class="active"
+                    >
+                        <span>◇</span>
+                        Mapa
+                    </a>
+
+                    <a href="#">
+                        <span>◫</span>
+                        Linha do tempo
+                    </a>
+
+                    <a href="#">
+                        <span>♜</span>
+                        Habitats
+                    </a>
+
+                    <a href="#">
+                        <span>↔</span>
+                        Comparador
+                    </a>
+
+                    <a href="#">
+                        <span>ⓘ</span>
+                        Sobre
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ATLAS INTERATIVO
+                </small>
+
+                <p>
+                    Fauna perdida • História natural
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+
+        <main class="main-content">
+
+            <!-- HERO -->
+
+            <section class="map-hero">
+
+                <p class="eyebrow">
+                    GEOGRAFIA DA EXTINÇÃO
+                </p>
+
+                <h1>
+                    Onde viveram
+                    os mundos perdidos?
+                </h1>
+
+                <p>
+                    Explore a distribuição aproximada
+                    das espécies do atlas e descubra
+                    como diferentes animais ocuparam
+                    continentes, ilhas e oceanos
+                    ao longo do tempo.
+                </p>
+
+            </section>
+
+
+            <!-- CONTROLS -->
+
+            <section class="map-controls">
+
+                <div>
+
+                    <label for="mapSpeciesFilter">
+                        Filtrar por espécie
+                    </label>
+
+                    <select id="mapSpeciesFilter">
+
+                        <option value="all">
+                            Todas as espécies
+                        </option>
+
+                        <option value="mamute">
+                            Mamute-lanoso
+                        </option>
+
+                        <option value="smilodon">
+                            Tigre-dente-de-sabre
+                        </option>
+
+                        <option value="preguica">
+                            Preguiça-gigante
+                        </option>
+
+                        <option value="megalodonte">
+                            Megalodonte
+                        </option>
+
+                        <option value="dodo">
+                            Dodô
+                        </option>
+
+                        <option value="tilacino">
+                            Tilacino
+                        </option>
+
+                        <option value="gliptodonte">
+                            Gliptodonte
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="map-counter">
+
+                    <small>
+                        ESPÉCIES VISÍVEIS
+                    </small>
+
+                    <strong id="mapSpeciesCount">
+                        7
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+            <!-- MAP -->
+
+            <section class="map-layout">
+
+                <div class="map-panel">
+
+                    <div id="extinctionMap"></div>
+
+                </div>
+
+
+                <aside class="map-side-panel">
+
+                    <p class="panel-title">
+                        COMO EXPLORAR
+                    </p>
+
+                    <h2>
+                        Viaje pelo planeta
+                    </h2>
+
+                    <p>
+                        Cada marcador representa uma
+                        região associada à distribuição
+                        histórica ou fóssil aproximada
+                        de uma espécie.
+                    </p>
+
+                    <div class="map-instruction">
+
+                        <span>01</span>
+
+                        <div>
+                            <strong>
+                                Escolha uma espécie
+                            </strong>
+
+                            <p>
+                                Use o filtro acima para
+                                destacar somente um animal.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="map-instruction">
+
+                        <span>02</span>
+
+                        <div>
+                            <strong>
+                                Clique no marcador
+                            </strong>
+
+                            <p>
+                                Veja informações rápidas
+                                sobre período e região.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="map-instruction">
+
+                        <span>03</span>
+
+                        <div>
+                            <strong>
+                                Explore o perfil
+                            </strong>
+
+                            <p>
+                                Abra a página individual
+                                para conhecer a espécie.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="map-note">
+
+                        <small>
+                            IMPORTANTE
+                        </small>
+
+                        <p>
+                            Os pontos desta primeira versão
+                            representam áreas aproximadas
+                            de ocorrência e não coordenadas
+                            exatas de todos os registros
+                            fósseis conhecidos.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </section>
+
+
+            <!-- LEGEND -->
+
+            <section class="map-legend">
+
+                <article>
+                    <span class="legend-dot mamute-dot"></span>
+
+                    <div>
+                        <strong>Mamute-lanoso</strong>
+                        <small>Hemisfério Norte</small>
+                    </div>
+                </article>
+
+
+                <article>
+                    <span class="legend-dot smilodon-dot"></span>
+
+                    <div>
+                        <strong>Smilodon</strong>
+                        <small>Américas</small>
+                    </div>
+                </article>
+
+
+                <article>
+                    <span class="legend-dot preguica-dot"></span>
+
+                    <div>
+                        <strong>Preguiça-gigante</strong>
+                        <small>América do Sul</small>
+                    </div>
+                </article>
+
+
+                <article>
+                    <span class="legend-dot megalodonte-dot"></span>
+
+                    <div>
+                        <strong>Megalodonte</strong>
+                        <small>Oceanos</small>
+                    </div>
+                </article>
+
+
+                <article>
+                    <span class="legend-dot dodo-dot"></span>
+
+                    <div>
+                        <strong>Dodô</strong>
+                        <small>Maurício</small>
+                    </div>
+                </article>
+
+
+                <article>
+                    <span class="legend-dot tilacino-dot"></span>
+
+                    <div>
+                        <strong>Tilacino</strong>
+                        <small>Tasmânia</small>
+                    </div>
+                </article>
+
+
+                <article>
+                    <span class="legend-dot gliptodonte-dot"></span>
+
+                    <div>
+                        <strong>Gliptodonte</strong>
+                        <small>Américas</small>
+                    </div>
+                </article>
+
+            </section>
+
+
+            <footer>
+
+                <p>
+                    ECOS DA EXTINÇÃO
+                </p>
+
+                <small>
+                    Atlas interativo da fauna perdida
+                    • Desenvolvido por
+                    <strong>
+                        Stephany Gonçalves da Silva
+                    </strong>
+                </small>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    ></script>
+
+    <script src="../js/mapa.js"></script>
+
+</body>
+
+</html>
