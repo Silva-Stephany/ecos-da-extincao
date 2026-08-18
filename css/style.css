@@ -3579,3 +3579,302 @@ footer small {
     }
 
 }
+/* =========================================
+   THYLACINE PROFILE
+========================================= */
+
+.thylacine-hero {
+    background:
+        radial-gradient(
+            circle at 58% 27%,
+            rgba(129, 91, 52, .17),
+            transparent 35%
+        ),
+        linear-gradient(
+            110deg,
+            #21170f 0%,
+            #17110c 52%,
+            #0c0906 100%
+        );
+}
+
+
+.thylacine-light {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(211, 166, 105, .15),
+            rgba(122, 80, 44, .04),
+            transparent
+        );
+}
+
+
+.thylacine-platform {
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(136, 91, 48, .23),
+            rgba(18, 13, 9, .95) 65%
+        );
+}
+
+
+.thylacine-environment {
+    background:
+        radial-gradient(
+            circle at 55% 18%,
+            rgba(111, 101, 58, .18),
+            transparent 42%
+        ),
+        linear-gradient(
+            180deg,
+            #30301d,
+            #19170e 63%,
+            #0c0a07
+        );
+}
+
+
+.thylacine-map {
+    background:
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(190, 142, 77, .16),
+            transparent 18%
+        ),
+        #0c0906;
+}
+
+
+.thylacine-map-focus {
+    background:
+        rgba(203,166,98,.14) !important;
+
+    border-color:
+        rgba(203,166,98,.62) !important;
+}
+
+
+.thylacine-extinction {
+    background:
+        radial-gradient(
+            circle at 75% 20%,
+            rgba(127, 78, 42, .11),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #21150e,
+            #0c0906
+        );
+}
+
+
+/* 1936 */
+
+.thylacine-1936 {
+    display: grid;
+
+    grid-template-columns:
+        1fr .8fr;
+
+    align-items: center;
+
+    gap: 45px;
+
+    margin-top: 14px;
+
+    padding: 60px;
+
+    border-radius: 20px;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(203,166,98,.10),
+            transparent 35%
+        ),
+        #0d0906;
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.thylacine-1936 h2 {
+    margin: 0 0 20px;
+
+    color: var(--gold-light);
+
+    font-family: var(--title);
+
+    font-size:
+        clamp(2.8rem, 5vw, 5rem);
+}
+
+
+.thylacine-1936 p {
+    max-width: 650px;
+
+    color: var(--muted);
+
+    font-size: .75rem;
+
+    line-height: 1.8;
+}
+
+
+.year-display {
+    display: flex;
+
+    min-height: 290px;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(38,27,18,.83),
+            rgba(16,11,7,.91)
+        );
+
+    border:
+        1px solid
+        rgba(203,166,98,.12);
+}
+
+
+.year-display small {
+    color: var(--gold);
+
+    letter-spacing: 2px;
+}
+
+
+.year-display strong {
+    margin: 10px 0;
+
+    color: var(--gold-light);
+
+    font-family: var(--title);
+
+    font-size: 7rem;
+
+    line-height: 1;
+}
+
+
+.year-display span {
+    color: var(--muted);
+
+    font-size: .6rem;
+
+    letter-spacing: 1.4px;
+}
+
+
+/* ARCHIVE */
+
+.thylacine-archive-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+}
+
+
+.thylacine-archive-grid article {
+    min-height: 240px;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(38,27,18,.55),
+            rgba(16,11,8,.78)
+        );
+
+    border:
+        1px solid
+        rgba(203,166,98,.09);
+}
+
+
+.thylacine-archive-grid article > span {
+    display: inline-block;
+
+    padding: 7px 10px;
+
+    border-radius: 6px;
+
+    color: var(--gold);
+
+    background:
+        rgba(203,166,98,.07);
+
+    font-size: .52rem;
+
+    letter-spacing: 1.3px;
+}
+
+
+.thylacine-archive-grid h3 {
+    margin: 25px 0 12px;
+
+    color: var(--bone);
+
+    font-family: var(--title);
+
+    font-size: 1.55rem;
+}
+
+
+.thylacine-archive-grid p {
+    color: var(--muted);
+
+    font-size: .69rem;
+
+    line-height: 1.7;
+}
+
+
+.thylacine-old {
+    color: var(--gold-light);
+}
+
+
+@media (max-width: 800px) {
+
+    .thylacine-1936 {
+        grid-template-columns:
+            1fr;
+
+        padding:
+            35px 25px;
+    }
+
+
+    .year-display strong {
+        font-size:
+            5rem;
+    }
+
+
+    .thylacine-archive-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}
