@@ -5749,3 +5749,503 @@ footer small {
     }
 
 }
+/* =========================================
+   HABITATS
+========================================= */
+
+.habitats-hero {
+    padding: 70px 50px;
+
+    margin-bottom: 14px;
+
+    border-radius: 22px;
+
+    background:
+        radial-gradient(
+            circle at 75% 25%,
+            rgba(203,166,98,.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #21170f,
+            #0c0906
+        );
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.habitats-hero h1 {
+    max-width: 920px;
+
+    margin: 0;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        clamp(3.3rem, 7vw, 6.5rem);
+
+    line-height: .9;
+}
+
+
+.habitats-hero > p:last-child {
+    max-width: 680px;
+
+    margin-top: 25px;
+
+    color:
+        var(--muted);
+
+    font-size: .78rem;
+
+    line-height: 1.8;
+}
+
+
+/* WORLD */
+
+.habitat-world {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        120px 1fr 320px;
+
+    gap: 30px;
+
+    min-height: 520px;
+
+    margin-bottom: 14px;
+
+    padding: 45px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.habitat-number {
+    font-family:
+        var(--title);
+
+    color:
+        rgba(203,166,98,.25);
+
+    font-size: 5rem;
+
+    line-height: 1;
+}
+
+
+.habitat-content {
+    align-self: center;
+
+    max-width: 650px;
+}
+
+
+.habitat-content h2 {
+    margin: 0 0 20px;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        clamp(2.8rem,5vw,5rem);
+
+    line-height: .92;
+}
+
+
+.habitat-content > p:not(.eyebrow) {
+    max-width: 560px;
+
+    color:
+        var(--muted);
+
+    font-size: .76rem;
+
+    line-height: 1.75;
+}
+
+
+.habitat-content > a {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color:
+        var(--gold);
+
+    font-size: .68rem;
+}
+
+
+/* FACTS */
+
+.habitat-facts {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-top: 28px;
+}
+
+
+.habitat-facts div {
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background:
+        rgba(0,0,0,.16);
+
+    border:
+        1px solid
+        rgba(203,166,98,.08);
+}
+
+
+.habitat-facts small {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color:
+        var(--gold);
+
+    font-size: .5rem;
+
+    letter-spacing: 1px;
+}
+
+
+.habitat-facts strong {
+    color:
+        var(--bone);
+
+    font-size: .63rem;
+
+    font-weight: 500;
+}
+
+
+/* SPECIES PANEL */
+
+.habitat-species {
+    align-self: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    min-height: 260px;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    background:
+        rgba(0,0,0,.22);
+
+    border:
+        1px solid
+        rgba(203,166,98,.10);
+}
+
+
+.habitat-species small {
+    margin-bottom: 20px;
+
+    color:
+        var(--gold);
+
+    font-size: .5rem;
+
+    letter-spacing: 1.3px;
+}
+
+
+.habitat-species strong {
+    margin-bottom: 7px;
+
+    font-family:
+        var(--title);
+
+    color:
+        var(--gold-light);
+
+    font-size: 2rem;
+}
+
+
+.habitat-species span {
+    color:
+        var(--muted);
+
+    font-family:
+        var(--title);
+
+    font-size: .8rem;
+
+    font-style: italic;
+}
+
+
+.multi-species strong {
+    padding: 8px 0;
+
+    border-bottom:
+        1px solid
+        rgba(203,166,98,.08);
+}
+
+
+/* INDIVIDUAL WORLDS */
+
+.tundra-world {
+    background:
+        radial-gradient(
+            circle at 75% 15%,
+            rgba(177,190,178,.10),
+            transparent 36%
+        ),
+        linear-gradient(
+            145deg,
+            #1d201c,
+            #0c0d0b
+        );
+}
+
+
+.plains-world {
+    background:
+        radial-gradient(
+            circle at 70% 20%,
+            rgba(152,111,58,.12),
+            transparent 38%
+        ),
+        linear-gradient(
+            145deg,
+            #24190f,
+            #0d0906
+        );
+}
+
+
+.forest-world {
+    background:
+        radial-gradient(
+            circle at 78% 15%,
+            rgba(75,104,60,.16),
+            transparent 36%
+        ),
+        linear-gradient(
+            145deg,
+            #171c11,
+            #090c07
+        );
+}
+
+
+.island-world {
+    background:
+        radial-gradient(
+            circle at 78% 20%,
+            rgba(105,135,89,.16),
+            transparent 36%
+        ),
+        linear-gradient(
+            145deg,
+            #192019,
+            #0b0d09
+        );
+}
+
+
+.tasmania-world {
+    background:
+        radial-gradient(
+            circle at 78% 20%,
+            rgba(104,92,61,.15),
+            transparent 36%
+        ),
+        linear-gradient(
+            145deg,
+            #1d1b12,
+            #0c0a07
+        );
+}
+
+
+.ocean-world {
+    background:
+        radial-gradient(
+            circle at 75% 20%,
+            rgba(45,113,126,.20),
+            transparent 38%
+        ),
+        linear-gradient(
+            145deg,
+            #0d1a1e,
+            #06090a
+        );
+}
+
+
+/* OVERVIEW */
+
+.habitat-overview {
+    margin-bottom: 14px;
+
+    padding: 55px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(15,10,7,.94);
+
+    border:
+        1px solid
+        var(--border);
+}
+
+
+.habitat-overview-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-top: 35px;
+}
+
+
+.habitat-overview-grid article {
+    min-height: 150px;
+
+    padding: 22px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(255,255,255,.018);
+
+    border:
+        1px solid
+        rgba(203,166,98,.08);
+}
+
+
+.habitat-overview-grid span {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-family:
+        var(--title);
+
+    color:
+        rgba(203,166,98,.30);
+
+    font-size: 2.2rem;
+}
+
+
+.habitat-overview-grid strong {
+    display: block;
+
+    color:
+        var(--bone);
+
+    font-family:
+        var(--title);
+
+    font-size: 1.4rem;
+}
+
+
+.habitat-overview-grid small {
+    color:
+        var(--muted);
+
+    font-size: .6rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .habitat-world {
+        grid-template-columns:
+            80px 1fr;
+    }
+
+
+    .habitat-species {
+        grid-column:
+            1 / -1;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .habitats-hero,
+    .habitat-world,
+    .habitat-overview {
+        padding:
+            35px 25px;
+    }
+
+
+    .habitat-world {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .habitat-number {
+        font-size:
+            3rem;
+    }
+
+
+    .habitat-facts {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .habitat-overview-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}
